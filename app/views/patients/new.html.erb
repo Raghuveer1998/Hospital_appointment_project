@@ -1,0 +1,21 @@
+<h1>FILL YOUR PATIENT FORM</h1>
+<%= form_with model: @patient do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %><br><br>
+  </div>
+
+  <div>
+    <%= form.label :mobile %><br>
+    <%= form.text_field :mobile %><br><br>
+  </div>
+
+  <div>
+    <%= form.label :date %><br>
+    <%= form.text_field :date %><br><br>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

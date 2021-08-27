@@ -1,0 +1,11 @@
+<h1>PATIENT LIST</h1>
+
+<ul>
+  <% @patients.each do |article| %>
+    <li>
+      <%= link_to article.name, article %>
+    </li>
+  <% end %>
+</ul>
+
+

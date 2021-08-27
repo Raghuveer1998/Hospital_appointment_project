@@ -1,0 +1,17 @@
+
+
+<h2>Patient Details</h2>
+<% @doctor.appointments.each do |appoint| %>
+  <p>
+    <strong>date:</strong>
+    <%= appoint.date %>
+  </p>
+  <p>
+    <strong>doctor_id :</strong>
+    <%= appoint.doctor_id %>
+  </p>
+  <p>
+    <strong>patient_id :</strong>
+    <%= appoint.patient_id %>
+  </p>
+  <% end %>
